@@ -1,10 +1,10 @@
 #include "header.hpp"
 
 /*
-This is you function definitions file, your program usually will have either several of these for 
-organizational purposes, or if the program is small enough, none.
-
-All of your header file and definition file contents could potentially be inside one singular .cpp file.
+    This is your function definitions file, your program usually will have either several of these for 
+    organizational purposes, or if the program is small enough, none.
+    
+    All of your header file and definition file contents could potentially be inside one singular .cpp file.
 */
 
 void problem_1() {
