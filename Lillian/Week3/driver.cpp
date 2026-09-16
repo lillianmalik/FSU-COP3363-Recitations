@@ -15,9 +15,12 @@ int main() {
     cout << "\n==== PROBLEM 1 ====" << endl;    // two examples of how to use a newline (\n and endl)
 
     int num;
-    float x_val = 9876543210;   // float is the same as double, unless you're worried about memory limits
-                                // float is 4 bytes, double is 8 bytes, long double is 16 bytes (on most systems)
-                                // (long is a keyword used to extend the size of a number, but it is not a data type on its own)
+    float x_val = 9876543210;
+    /*
+        float is the same as double, unless you're worried about memory limits
+        float is 4 bytes, double is 8 bytes, long double is 16 bytes (on most systems)
+        (long is a keyword used to extend the size of a number, but it is not a data type on its own)
+    */
 
     cout << "Enter an integer: > ";
     cin >> num;
@@ -27,10 +30,16 @@ int main() {
     double result = (x_val / num) * 18;
 
     cout << fixed << setprecision(3) << "The result of x_val / num * 18 is: " << result << endl;
-    // note how I inserted the string in a different place here
-    // in reality it doesn't matter the order of the output, but it is good to be consistent with your formatting
-    // for readability and maintainability of your code.
-    // "It's a fixed value accurate to 3 decimal places" reads better than "Accurate to 3 decimal places, it's a fixed value"
+    /*
+        note how I inserted the string in a different place here
+        in reality it doesn't matter the order of the output, 
+        but it is good to be consistent with your formatting
+        for readability and maintainability of your code.
+
+        "It's a fixed value accurate to 3 decimal places" 
+        reads better than 
+        "Accurate to 3 decimal places, it's a fixed value"
+    */
 
 // ================================================================ PROBLEM 2
     cout << "\n==== PROBLEM 2 ====" << endl;
@@ -49,6 +58,7 @@ int main() {
 
 // ================================================================ PROBLEM 3
     cout << "\n==== PROBLEM 3 ====" << endl;
+
     int a;
     double b;
 
@@ -58,20 +68,24 @@ int main() {
     const int NUM = 150;
     /*  Some notes on the const keyword:
 
-        Means that NUM cannot be changed after it is initialized.
-        It also has to be initialized when it is declared, otherwise it will throw an error.
+        "const" means that NUM cannot be changed after it is initialized.
+        It also HAS to be initialized when it is declared, otherwise it will throw an error.
 
-        If we wanted the user to input a value that's constant, we could use the const keyword in the function parameter list, like this:
-        void myFunction(const int x) {
-            // x cannot be changed in this function
-        }
+        If we wanted the user to input a value that's constant, we could use the const keyword 
+        in the function parameter list, like this:
+
+            void myFunction(const int x) {
+                // x cannot be changed in this function
+            }
         
         or use a temp variable like this:
-        int temp;
-        cin >> temp;
-        const int x = temp;
 
-        also: constants are usually written in all caps to distinguish them from regular variables, but this is not required.
+            int temp;
+            cin >> temp;
+            const int x = temp;
+
+        also: constants are usually written in all caps to distinguish them from 
+              regular variables, but this is not required.
     */
     cout << "The hexadecimal version of " << NUM << " is: " << hex << NUM << endl;
 
@@ -96,7 +110,7 @@ int main() {
     float y;
 
     cout << "Enter an integer and a float separated by a space: > ";
-
+    
     cin >> dec >> x;
     cin >> y;
 
@@ -104,11 +118,14 @@ int main() {
 
     cout << "The hexadecimal version of x * TOTAL is: " << hex << x*TOTAL << endl;
     cout << "The fixed version of (x + y) / TOTAL accurate to 3 decimal places is: " << fixed << setprecision(3) << (x + y) / TOTAL << endl;
-    // Note that spaces don't affect the output of the program, but they do affect the readability of your code.  
-    // It is good practice to have spaces around operators and after commas.
 
-    // Also note that we are not explicitly changing TOTAL, which is why we are able to use it in the calculations.
-    // We are temporarily changing the value of x and y, but not TOTAL, which is a constant.
+    /*
+        Note that spaces don't affect the output of the program, but they do affect the readability of your code.  
+        It is good practice to have spaces around operators and after commas.
+
+        Also note that we are not explicitly changing TOTAL, which is why we are able to use it in the calculations.
+        We are temporarily changing the value of x and y, but not TOTAL, which is a constant.    
+    */
 
 // ================================================================ END OF PROGRAM (TEST SECTION)
 

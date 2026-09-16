@@ -16,15 +16,16 @@ using namespace std;
 
 // ======================================= CLASS DEFINITION(S)
 class Car {
-    public:     
-        // Make sure to have the public access specifier here,
-        // otherwise the class members will be private by default and you won't be able to access them.
+    public: // Make sure to have the public access specifier here,
+            // otherwise the class members will be private by default
+            // and you won't be able to access them.
         string make;
         string model;
         int year;
         string color;
 };  // NOTE: we have to have a semicolon at the end of a class definition, otherwise it will throw an error
-
+    //       "class" must also be lowercase, it cannot be "Class"
+    
 // ======================================= FUNCTION DECLARATION(S)
 string set_car(Car myCar);
 
