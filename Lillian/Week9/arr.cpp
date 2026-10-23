@@ -74,9 +74,10 @@ int main() {
     /*
         also apparently you don't need to use a different index variable for each loop
         you can reuse the same index variable in different loops without any issues.
+        i just change variables because i'm paranoid.
 
-        AS LONG AS the loops are not within each other (i.e., not nested).
-        that then messes with scope stuff
+        but anyways, it's fine AS LONG AS the loops are not within each other (i.e., not nested).
+        that then messes with the scope (what the compiler can see)
 
         BAD CODE EXAMPLE:
         for (int i = 0; i < 10; i++) {
